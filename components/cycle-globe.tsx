@@ -26,6 +26,10 @@ const MONTH_STEP = 360 / MONTH_IDS.length;
 const EVENT_STEP = 360 / EVENT_IDS.length;
 const DRAG_GAIN = 1.25;
 const CLICK_SLOP = 8;
+// A shallow tilt keeps the month ring reading as a flat left-right ellipse.
+const MONTH_TILT = -16;
+// A shallow turn keeps the event ring reading as a tall top-bottom ellipse.
+const EVENT_TILT = 28;
 
 function dragDegrees(deltaPx: number, radius: number) {
   return (deltaPx / Math.max(radius, 1)) * (180 / Math.PI) * DRAG_GAIN;
@@ -110,16 +114,31 @@ export function CycleGlobe() {
     const originEvent = eventRef.current;
     const ringRadius = radiusRef.current;
     let moved = false;
+    let axis: "x" | "y" | null = null;
+
+    function chooseAxis(dx: number, dy: number) {
+      if (axis) {
+        return axis;
+      }
+      if (Math.hypot(dx, dy) <= CLICK_SLOP) {
+        return null;
+      }
+      axis = Math.abs(dx) >= Math.abs(dy) ? "x" : "y";
+      moved = true;
+      return axis;
+    }
 
     function move(pointerEvent: PointerEvent) {
       const dx = pointerEvent.clientX - startX;
       const dy = pointerEvent.clientY - startY;
-      if (Math.hypot(dx, dy) > CLICK_SLOP) {
-        moved = true;
+      const chosen = chooseAxis(dx, dy);
+      if (chosen === "x") {
+        commitMonth(originMonth + dragDegrees(dx, ringRadius));
+        setDragging(true);
+      } else if (chosen === "y") {
+        commitEvent(originEvent - dragDegrees(dy, ringRadius));
+        setDragging(true);
       }
-      commitMonth(originMonth + dragDegrees(dx, ringRadius));
-      commitEvent(originEvent - dragDegrees(dy, ringRadius));
-      setDragging(true);
     }
 
     function end(pointerEvent: PointerEvent) {
@@ -128,11 +147,12 @@ export function CycleGlobe() {
       window.removeEventListener("pointercancel", end);
       const dx = pointerEvent.clientX - startX;
       const dy = pointerEvent.clientY - startY;
-      if (Math.hypot(dx, dy) > CLICK_SLOP) {
-        moved = true;
+      const chosen = chooseAxis(dx, dy);
+      if (chosen === "x") {
+        commitMonth(snapToStep(originMonth + dragDegrees(dx, ringRadius), MONTH_STEP));
+      } else if (chosen === "y") {
+        commitEvent(snapToStep(originEvent - dragDegrees(dy, ringRadius), EVENT_STEP));
       }
-      commitMonth(snapToStep(originMonth + dragDegrees(dx, ringRadius), MONTH_STEP));
-      commitEvent(snapToStep(originEvent - dragDegrees(dy, ringRadius), EVENT_STEP));
       setDragging(false);
       if (moved || pointerEvent.type === "pointercancel") {
         if (moved) {
@@ -162,8 +182,7 @@ export function CycleGlobe() {
   const activeEvent = indexFromRotation(eventRotation, EVENT_IDS.length);
   const monthLabel = t(`months.${MONTH_IDS[activeMonth]}`);
   const eventLabel = t(`events.${EVENT_IDS[activeEvent]}`);
-  const monthTilt = 68;
-  const eventTilt = 76 * eventSide;
+  const eventTilt = EVENT_TILT * eventSide;
 
   return (
     <section
@@ -207,7 +226,7 @@ export function CycleGlobe() {
             style={{
               width: radius * 2,
               height: radius * 2,
-              transform: "translate(-50%, -50%) rotateX(68deg)",
+              transform: `translate(-50%, -50%) rotateX(${MONTH_TILT}deg)`,
             }}
           />
           <div
@@ -226,7 +245,7 @@ export function CycleGlobe() {
             data-dragging={dragging ? "true" : "false"}
             style={{
               transformStyle: "preserve-3d",
-              transform: `rotateX(${monthTilt}deg) rotateY(${monthRotation}deg)`,
+              transform: `rotateX(${MONTH_TILT}deg) rotateY(${monthRotation}deg)`,
             }}
           >
             {MONTH_IDS.map((id, index) => (
@@ -239,7 +258,7 @@ export function CycleGlobe() {
                 active={index === activeMonth}
                 depth={frontness(monthRotation, index, MONTH_STEP)}
                 placement={`rotateY(${index * MONTH_STEP}deg) translateZ(${radius}px) translate(-50%, -50%)`}
-                facing={`rotateY(${-(index * MONTH_STEP + monthRotation)}deg) rotateX(${-monthTilt}deg)`}
+                facing={`rotateY(${-(index * MONTH_STEP + monthRotation)}deg) rotateX(${-MONTH_TILT}deg)`}
                 suppressClickRef={suppressClickRef}
               />
             ))}
@@ -272,7 +291,7 @@ export function CycleGlobe() {
 
           <div
             className="pointer-events-none absolute left-1/2 top-1/2"
-            style={{ transform: "translate(-50%, -58%) translateZ(0px)" }}
+            style={{ transform: "translate(-50%, -50%) translateZ(0px)" }}
           >
             <GlobeAvatar label={t("avatarLabel")} />
           </div>
