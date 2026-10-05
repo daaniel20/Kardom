@@ -5,7 +5,7 @@
   },
   "Home": {
     "title": "כרדום",
-    "intro": "השפה הפעילה והכיוון של העמוד.",
+    "intro": "לוח יהודי, זמני היום, ומחזור החיים.",
     "localeLabel": "שפה",
     "directionLabel": "כיוון",
     "hebrew": "עברית",
@@ -39,5 +39,48 @@
     "errorGeneric": "משהו השתבש. אפשר לנסות שוב.",
     "callbackError": "לא הצלחנו להשלים את הקישור לכניסה.",
     "passwordTooShort": "הסיסמה צריכה לפחות 6 תווים."
+  },
+  "Header": {
+    "wordmark": "כרדום",
+    "searchLabel": "חיפוש",
+    "searchPlaceholder": "חיפוש תגיות, מוצרים ותוכן",
+    "switchTo": "מעבר ל{language}",
+    "hebrew": "עברית",
+    "english": "English",
+    "signIn": "כניסה",
+    "account": "חשבון"
+  },
+  "Zmanim": {
+    "title": "זמני היום",
+    "loading": "טוען זמנים",
+    "unavailable": "הזמנים לא זמינים כרגע.",
+    "englishDate": "{day} ב{month} {year}",
+    "locationJerusalem": "ירושלים",
+    "locationCurrent": "המיקום שלך",
+    "factEmpty": "אין עובדה להיום.",
+    "alotHaShachar": "עלות השחר",
+    "sunrise": "הנץ החמה",
+    "sofZmanShma": "סוף זמן קריאת שמע",
+    "sofZmanTfilla": "סוף זמן תפילה",
+    "chatzot": "חצות",
+    "minchaGedola": "מנחה גדולה",
+    "sunset": "שקיעה",
+    "tzeit": "צאת הכוכבים",
+    "months": {
+      "1": "תשרי",
+      "2": "חשוון",
+      "3": "כסלו",
+      "4": "טבת",
+      "5": "שבט",
+      "6": "אדר",
+      "adar1": "אדר א׳",
+      "7": "ניסן",
+      "8": "אייר",
+      "9": "סיוון",
+      "10": "תמוז",
+      "11": "אב",
+      "12": "אלול",
+      "13": "אדר ב׳"
+    }
   }
 }

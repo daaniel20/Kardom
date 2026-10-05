@@ -5,7 +5,7 @@
   },
   "Home": {
     "title": "Kardom",
-    "intro": "The active language and the page direction.",
+    "intro": "A Jewish calendar, the times of day, and the cycle of life.",
     "localeLabel": "Language",
     "directionLabel": "Direction",
     "hebrew": "עברית",
@@ -39,5 +39,48 @@
     "errorGeneric": "Something went wrong. Try again.",
     "callbackError": "The sign-in link could not be completed.",
     "passwordTooShort": "Use a password of at least 6 characters."
+  },
+  "Header": {
+    "wordmark": "Kardom",
+    "searchLabel": "Search",
+    "searchPlaceholder": "Search tags, products, and content",
+    "switchTo": "Switch to {language}",
+    "hebrew": "עברית",
+    "english": "English",
+    "signIn": "Sign in",
+    "account": "Account"
+  },
+  "Zmanim": {
+    "title": "Daily zmanim",
+    "loading": "Loading times",
+    "unavailable": "Times are unavailable right now.",
+    "englishDate": "{day} {month} {year}",
+    "locationJerusalem": "Jerusalem",
+    "locationCurrent": "Your location",
+    "factEmpty": "No fact for today.",
+    "alotHaShachar": "Dawn",
+    "sunrise": "Sunrise",
+    "sofZmanShma": "Latest Shema",
+    "sofZmanTfilla": "Latest Amidah",
+    "chatzot": "Midday",
+    "minchaGedola": "Earliest Mincha",
+    "sunset": "Sunset",
+    "tzeit": "Nightfall",
+    "months": {
+      "1": "Tishrei",
+      "2": "Cheshvan",
+      "3": "Kislev",
+      "4": "Tevet",
+      "5": "Shevat",
+      "6": "Adar",
+      "adar1": "Adar I",
+      "7": "Nisan",
+      "8": "Iyar",
+      "9": "Sivan",
+      "10": "Tammuz",
+      "11": "Av",
+      "12": "Elul",
+      "13": "Adar II"
+    }
   }
 }
