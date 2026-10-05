@@ -142,3 +142,24 @@ body {
   background: #ffd0de;
   color: #5c2438;
 }
+
+.cycle-ring,
+.cycle-card {
+  transition: transform 480ms cubic-bezier(0.22, 0.82, 0.24, 1);
+}
+
+.cycle-card {
+  transition-property: transform, opacity;
+}
+
+.cycle-ring[data-dragging="true"],
+.cycle-ring[data-dragging="true"] .cycle-card {
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cycle-ring,
+  .cycle-card {
+    transition: none;
+  }
+}

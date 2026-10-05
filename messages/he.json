@@ -50,6 +50,43 @@
     "signIn": "כניסה",
     "account": "חשבון"
   },
+  "Globe": {
+    "label": "המחזור היהודי",
+    "hint": "גררו לצדדים בין החודשים. גררו למעלה או למטה בין אירועי החיים.",
+    "avatarLabel": "כרדום",
+    "selection": "{month}, {event}",
+    "months": {
+      "tishrei": "תשרי",
+      "cheshvan": "חשוון",
+      "kislev": "כסלו",
+      "tevet": "טבת",
+      "shevat": "שבט",
+      "adar": "אדר",
+      "nisan": "ניסן",
+      "iyar": "אייר",
+      "sivan": "סיוון",
+      "tammuz": "תמוז",
+      "av": "אב",
+      "elul": "אלול"
+    },
+    "events": {
+      "birth": "לידה",
+      "brit-milah": "ברית מילה",
+      "simchat-bat": "שמחת בת",
+      "pidyon-haben": "פדיון הבן",
+      "upsherin": "חלאקה",
+      "bar-mitzvah": "בר מצווה",
+      "bat-mitzvah": "בת מצווה",
+      "wedding": "חתונה"
+    }
+  },
+  "Topic": {
+    "month": "חודש",
+    "event": "אירוע חיים",
+    "hebrewName": "עברית",
+    "englishName": "English",
+    "back": "חזרה לדף הבית"
+  },
   "Zmanim": {
     "title": "זמני היום",
     "loading": "טוען זמנים",
