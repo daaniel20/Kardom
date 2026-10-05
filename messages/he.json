@@ -1,0 +1,43 @@
+{
+  "Metadata": {
+    "title": "כרדום",
+    "description": "המחזור היהודי ושוק. עברית מימין לשמאל, ואנגלית משמאל לימין."
+  },
+  "Home": {
+    "title": "כרדום",
+    "intro": "השפה הפעילה והכיוון של העמוד.",
+    "localeLabel": "שפה",
+    "directionLabel": "כיוון",
+    "hebrew": "עברית",
+    "english": "English",
+    "signIn": "כניסה"
+  },
+  "Auth": {
+    "title": "כניסה",
+    "intro": "אפשר להיכנס עם דוא״ל, טלפון או Apple.",
+    "methodLabel": "אופן כניסה",
+    "email": "דוא״ל",
+    "phone": "טלפון",
+    "apple": "Apple",
+    "emailLabel": "דוא״ל",
+    "passwordLabel": "סיסמה",
+    "displayNameLabel": "שם תצוגה",
+    "phoneLabel": "מספר טלפון",
+    "phoneHint": "כולל קידומת מדינה, למשל ‎+972501234567.",
+    "codeLabel": "קוד",
+    "signIn": "כניסה",
+    "signUp": "יצירת חשבון",
+    "sendCode": "שליחת קוד",
+    "verifyCode": "אימות הקוד",
+    "continueWithApple": "המשך עם Apple",
+    "signOut": "יציאה",
+    "signedInAs": "מחוברים בתור {identity}.",
+    "checkEmail": "יש לאשר את החשבון בהודעה שנשלחה לדוא״ל.",
+    "codeSent": "נשלח קוד למספר הטלפון.",
+    "missingConfig": "הכניסה ממתינה להגדרת Supabase.",
+    "backHome": "חזרה לדף הבית",
+    "errorGeneric": "משהו השתבש. אפשר לנסות שוב.",
+    "callbackError": "לא הצלחנו להשלים את הקישור לכניסה.",
+    "passwordTooShort": "הסיסמה צריכה לפחות 6 תווים."
+  }
+}

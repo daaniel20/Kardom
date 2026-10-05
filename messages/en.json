@@ -1,0 +1,43 @@
+{
+  "Metadata": {
+    "title": "Kardom",
+    "description": "Jewish cycle and marketplace. Hebrew is right-to-left, and English is left-to-right."
+  },
+  "Home": {
+    "title": "Kardom",
+    "intro": "The active language and the page direction.",
+    "localeLabel": "Language",
+    "directionLabel": "Direction",
+    "hebrew": "עברית",
+    "english": "English",
+    "signIn": "Sign in"
+  },
+  "Auth": {
+    "title": "Sign in",
+    "intro": "Use email, phone, or Apple.",
+    "methodLabel": "Sign-in method",
+    "email": "Email",
+    "phone": "Phone",
+    "apple": "Apple",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "displayNameLabel": "Display name",
+    "phoneLabel": "Phone number",
+    "phoneHint": "Include the country code, for example +972501234567.",
+    "codeLabel": "Code",
+    "signIn": "Sign in",
+    "signUp": "Create account",
+    "sendCode": "Send code",
+    "verifyCode": "Verify code",
+    "continueWithApple": "Continue with Apple",
+    "signOut": "Sign out",
+    "signedInAs": "Signed in as {identity}.",
+    "checkEmail": "Check your email to confirm the account.",
+    "codeSent": "A code was sent to your phone.",
+    "missingConfig": "Sign-in is waiting on Supabase configuration.",
+    "backHome": "Back home",
+    "errorGeneric": "Something went wrong. Try again.",
+    "callbackError": "The sign-in link could not be completed.",
+    "passwordTooShort": "Use a password of at least 6 characters."
+  }
+}
