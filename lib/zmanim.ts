@@ -80,8 +80,14 @@ export function isTimeZone(value: string) {
 }
 
 export function parseLocation(params: URLSearchParams): LocationInput {
-  const latitude = Number(params.get("latitude"));
-  const longitude = Number(params.get("longitude"));
+  const latitudeRaw = params.get("latitude");
+  const longitudeRaw = params.get("longitude");
+  if (!latitudeRaw || !longitudeRaw) {
+    return {};
+  }
+
+  const latitude = Number(latitudeRaw);
+  const longitude = Number(longitudeRaw);
   const timeZone = params.get("tzid") ?? "";
   const coordinates =
     Number.isFinite(latitude) &&
