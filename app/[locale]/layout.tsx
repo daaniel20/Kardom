@@ -3,6 +3,7 @@ import { Rubik } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
+import { SiteHeader } from "@/components/site-header";
 import { directionFor, routing } from "@/i18n/routing";
 import "../globals.css";
 
@@ -72,7 +73,10 @@ export default async function LocaleLayout({
       className={`${rubik.variable} ${rubik.className} h-full antialiased`}
     >
       <body className="min-h-full">
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <SiteHeader />
+          <div className="pt-16">{children}</div>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
