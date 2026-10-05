@@ -50,6 +50,43 @@
     "signIn": "Sign in",
     "account": "Account"
   },
+  "Globe": {
+    "label": "Jewish cycle",
+    "hint": "Drag sideways for the months. Drag up or down for life events.",
+    "avatarLabel": "Kardom",
+    "selection": "{month}, {event}",
+    "months": {
+      "tishrei": "Tishrei",
+      "cheshvan": "Cheshvan",
+      "kislev": "Kislev",
+      "tevet": "Tevet",
+      "shevat": "Shevat",
+      "adar": "Adar",
+      "nisan": "Nisan",
+      "iyar": "Iyar",
+      "sivan": "Sivan",
+      "tammuz": "Tammuz",
+      "av": "Av",
+      "elul": "Elul"
+    },
+    "events": {
+      "birth": "Birth",
+      "brit-milah": "Brit Milah",
+      "simchat-bat": "Simchat Bat",
+      "pidyon-haben": "Pidyon HaBen",
+      "upsherin": "Upsherin",
+      "bar-mitzvah": "Bar Mitzvah",
+      "bat-mitzvah": "Bat Mitzvah",
+      "wedding": "Wedding"
+    }
+  },
+  "Topic": {
+    "month": "Month",
+    "event": "Life event",
+    "hebrewName": "Hebrew",
+    "englishName": "English",
+    "back": "Back home"
+  },
   "Zmanim": {
     "title": "Daily zmanim",
     "loading": "Loading times",
