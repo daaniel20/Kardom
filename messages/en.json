@@ -85,7 +85,186 @@
     "event": "Life event",
     "hebrewName": "Hebrew",
     "englishName": "English",
-    "back": "Back home"
+    "back": "Back home",
+    "contentHeading": "Content",
+    "infoHeading": "Info",
+    "customsHeading": "Customs",
+    "marketplaceHeading": "Recommended products",
+    "marketplaceLead": "A sideways row of affiliate picks for this page. Each product opens its store on another site.",
+    "sampleNote": "Sample products, shown because the live catalog is empty.",
+    "sampleBadge": "Sample",
+    "carouselLabel": "Recommended products",
+    "scrollHint": "Scroll sideways for more.",
+    "openProduct": "Open {title} on another site",
+    "generalCategory": "General",
+    "marketHeading": "Community market",
+    "comingSoon": "Coming Soon",
+    "marketLead": "A second-hand shelf for the community. The structure is here, and the market itself stays closed.",
+    "marketClosed": "No listings yet. This screen cannot save an item.",
+    "marketSearch": "Search listings",
+    "listItem": "List an item",
+    "emptyShelf": "Empty shelf",
+    "marketControls": "Market controls",
+    "marketCategories": {
+      "clothing": "Clothing",
+      "books": "Books",
+      "ritual": "Judaica",
+      "kids": "Children"
+    },
+    "months": {
+      "tishrei": {
+        "content": "Tishrei opens the year and holds its fullest run of holy days. Rosh Hashanah, the Ten Days of Repentance, Yom Kippur, Sukkot, and Shemini Atzeret with Simchat Torah all fall here. The month moves from the shofar and the Book of Life to a week of meals in the sukkah.",
+        "info": "Counted from Nisan, Tishrei is the seventh month; as the start of the year it is the first. Rosh Hashanah is 1–2 Tishrei, Yom Kippur is 10 Tishrei, Sukkot is 15–21 Tishrei, and Shemini Atzeret is 22 Tishrei. In Israel, Simchat Torah shares that day. Outside Israel it is 23 Tishrei.",
+        "customs": "Apples in honey, round challah, and tashlich beside the water mark the new year. Yom Kippur is a full fast in white. Families build a sukkah, shake the lulav and etrog, and dance with the Torah. Many read Kohelet on Sukkot."
+      },
+      "cheshvan": {
+        "content": "Cheshvan comes right after the festivals and keeps almost no holy day of its own. In Israel the prayer for rain in the blessing of the years begins on 7 Cheshvan, once pilgrims from Sukkot would have reached home. The month is often called Marcheshvan, bitter Cheshvan, because the calendar is quiet.",
+        "info": "Cheshvan has 29 or 30 days. The story of the Flood is tied to this season: the rains of Noah begin on 17 Cheshvan. In the diaspora, mashiv haruach starts on Shemini Atzeret, while the request for rain inside the weekday Amidah starts later in Israel so travelers are not caught in it.",
+        "customs": "There is no feast and no fast required by the month itself. Rosh Chodesh is still marked, and some communities remember Rachel on 11 Cheshvan. The custom of Cheshvan is ordinary Shabbat, the first rains, and a pause before the lights of Kislev."
+      },
+      "kislev": {
+        "content": "Kislev is the month of the rededication. Hanukkah begins on 25 Kislev and remembers the Hasmoneans clearing the Temple and the jar of oil that burned for eight days. The nights are long, and the practice of the month is to add one more flame.",
+        "info": "Hanukkah runs eight days, from 25 Kislev into Tevet. It is not a full rest day: work is allowed, Hallel is said, and Al HaNissim is added to the Amidah and to Birkat Hamazon. The mitzvah is the lights at the window or the doorway, after nightfall, and they must burn for at least half an hour.",
+        "customs": "One new light is added each night. Many Ashkenazi homes set the candles from left to right and light the newest one first. Foods fried in oil, latkes and sufganiyot, dreidel, and gelt belong to these nights, along with Maoz Tzur."
+      },
+      "tevet": {
+        "content": "Tevet finishes Hanukkah and then turns to a fast. On 10 Tevet the Babylonian siege of Jerusalem began, and the day is kept from dawn until nightfall, even when it falls on Friday.",
+        "info": "When Kislev has 30 days, Hanukkah ends on 2 Tevet. When Kislev has 29 days, it ends on 3 Tevet. 10 Tevet is one of the four public fasts linked to the destruction. In the northern hemisphere this is the dark stretch of the year, with the shortest daylight nearby.",
+        "customs": "The last nights of the hanukkiah give way to ordinary weeks. On 10 Tevet communities read Vayechal, and some add selichot. The fast does not carry the extra mourning of Tisha B’Av: people sit as usual, and no feast is attached to the day."
+      },
+      "shevat": {
+        "content": "Shevat is the new year of the trees. On 15 Shevat, Tu BiShvat, the sap is said to rise and the almond blossoms in Israel. The day is for fruit, for the land, and for the produce that will be counted in the year ahead.",
+        "info": "The Mishnah lists four new years. 15 Shevat is the new year for trees, used for orlah and for tithes. Work does not stop. In modern Israel it also became a day of planting. Shevat usually has 30 days and, counted from Nisan, it is the eleventh month.",
+        "customs": "People eat fruit, especially the seven species: wheat, barley, grapes, figs, pomegranates, olives, and dates. Kabbalists in Tzfat shaped a Tu BiShvat seder with cups of wine and fruits of several colors. A new fruit earns a shehecheyanu, and trees are planted where the season allows."
+      },
+      "adar": {
+        "content": "Adar is the month of Purim. The saying is that when Adar enters, joy increases. The Megillah tells how Esther and Mordechai turned a decree in Shushan into a day of reading, gifts, and a feast.",
+        "info": "Purim is 14 Adar. In cities walled since the days of Joshua, such as Jerusalem, it is kept on 15 Adar as Shushan Purim. In a leap year there are two Adars. The full Purim is in Adar II, and 14 Adar I is Purim Katan, without the full Megillah reading. The Fast of Esther is usually 13 Adar.",
+        "customs": "The Megillah is heard at night and again in the morning. Mishloach manot sends two ready foods to a friend, gifts go to the poor, and the day ends with a festive meal. Costumes, noisemakers at Haman’s name, and hamantaschen are the widespread customs."
+      },
+      "nisan": {
+        "content": "Nisan is the month of the Exodus. The Torah calls it the first of the months. Passover begins on 15 Nisan and retells the night Israel left Egypt, with spring and the barley harvest behind the story.",
+        "info": "14 Nisan is the search for chametz and, after midday, a time when many do not eat matzah so the seder will be the first taste. The seder is one night in Israel and two nights outside Israel. The Omer count begins on the second night and runs 49 days toward Shavuot. The Israeli civic calendar marks Yom HaShoah on 27 Nisan.",
+        "customs": "Homes are cleaned of chametz, and chametz is sold where that is the practice. The seder plate holds matzah, maror, charoset, a shank bone or beet, an egg, and karpas. Four cups, the Haggadah, and a week without leaven follow. Some communities eat kitniyot and some do not."
+      },
+      "iyar": {
+        "content": "Iyar is walked inside the Omer, between the barley of Pesach and the wheat of Shavuot. It holds Pesach Sheni and Lag BaOmer. The civic calendar of Israel also places Memorial Day, Independence Day, and Jerusalem Day here.",
+        "info": "Pesach Sheni is 14 Iyar, the second chance for the Passover offering in Temple times. Lag BaOmer is the 33rd day of the Omer, 18 Iyar, linked with Rabbi Shimon bar Yochai and with a pause in the Omer mourning. Yom HaAtzmaut is 5 Iyar, shifted when needed so Shabbat is kept, and Yom Yerushalayim is 28 Iyar.",
+        "customs": "Many refrain from weddings and haircuts for part of the Omer, then celebrate Lag BaOmer with bonfires, bows, and first haircuts at Meron. Some eat matzah on Pesach Sheni. Memorial Day is marked with sirens, and Independence Day with prayers for the state, according to the community."
+      },
+      "sivan": {
+        "content": "Sivan is the month of the giving of the Torah. Shavuot falls on 6 Sivan and closes the count of the Omer. Tradition says Israel stood at Sinai on this date. In the land it was also the festival of the first fruits.",
+        "info": "Shavuot is one day in Israel and two days outside Israel. The Torah reading includes the Ten Commandments, and many communities read the Book of Ruth for the harvest and for Ruth’s entry into the covenant. Dairy meals are a widespread custom, with several explanations, among them the new care for food rules after Sinai.",
+        "customs": "Many stay up on Shavuot eve for a tikkun of study. Homes serve cheese, milk, and blintzes. Some Ashkenazi synagogues bring in greenery. The last days of the Omer are counted up to the festival, and some synagogues add a children’s Torah ceremony."
+      },
+      "tammuz": {
+        "content": "Tammuz opens the Three Weeks. The fast of 17 Tammuz remembers the breach of Jerusalem’s walls, and other troubles the tradition assigns to that date. From that morning the season is called Bein HaMetzarim, between the straits.",
+        "info": "17 Tammuz is a dawn-to-nightfall fast. If it falls on Shabbat it is postponed to Sunday. The Three Weeks run until Tisha B’Av in Av. Work continues. What changes is celebration: weddings, music, and haircuts, with customs that grow stricter as Av comes closer.",
+        "customs": "Communities fast, read the Torah portion of the fast, and begin to hold back weddings. Many Ashkenazim also pause live music and new clothing from 17 Tammuz. Some Sephardi communities keep the stricter limits for the week of Tisha B’Av only. The season is for study of the destruction, not for another festival."
+      },
+      "av": {
+        "content": "Av holds the lowest day of the year and then a turn toward comfort. Tisha B’Av, 9 Av, mourns the destruction of both Temples and later catastrophes assigned to the day. After the fast, Shabbat Nachamu reads Isaiah’s consolation, and Tu B’Av, 15 Av, was a day of matches.",
+        "info": "Tisha B’Av is a full fast from sunset to the next nightfall. People sit low, read Eicha, and recite kinot. The Nine Days from Rosh Chodesh Av until the fast tighten the mourning, especially among Ashkenazim: no meat or wine except on Shabbat, and no laundry or haircuts. The Mishnah describes dances in the vineyards on 15 Av.",
+        "customs": "The meal before the fast is plain, sometimes eggs and ashes, and Eicha is read in a dim room. Leather shoes come off and washing is limited. After the fast, many wait until midday on 10 Av before meat and music. On Tu B’Av, weddings resume."
+      },
+      "elul": {
+        "content": "Elul is the month of approach, just before the days of judgment. Its letters are read as Ani ledodi vedodi li: I am my beloved’s and my beloved is mine. A teaching of the month pictures a king still in the field, close enough to meet before Rosh Hashanah.",
+        "info": "Elul has 29 days and leads directly into Tishrei. Sephardi communities begin Selichot at the start of Elul. Ashkenazi communities begin on the Saturday night before Rosh Hashanah, and if that leaves fewer than four days they start a week earlier. Psalm 27 is said in many rites from Rosh Chodesh Elul through Hoshana Rabbah.",
+        "customs": "The shofar is sounded on weekdays after the morning service, not on Shabbat and not on the eve of Rosh Hashanah. People say Selichot, check mezuzot and tefillin, and ask forgiveness from one another. The greeting is a wish to be written and sealed for a good year."
+      }
+    },
+    "events": {
+      "birth": {
+        "content": "A birth adds a name to the community, and the first days are for the mother and the baby more than for a public rite. Visits, meals, and blessings come first. The covenant ceremonies follow: brit milah for a boy on the eighth day, and a naming for a girl when the family is ready.",
+        "info": "Many Ashkenazi families wait to announce a boy’s Hebrew name until the brit, and a girl’s name until the synagogue blessing. Some Sephardi families name sooner. The practical obligation of these days is help: food for the household, and care for the mother. A firstborn son may later be redeemed if the rules of pidyon haben apply.",
+        "customs": "Friends bring meals so the parents can rest. For a boy, Ashkenazi communities often hold a Shalom Zachar on the first Friday night, with chickpeas and words of Torah. A daughter is welcomed with a Simchat Bat or Zeved Habat. Amulets and talk of the evil eye are folk practice, not a requirement."
+      },
+      "brit-milah": {
+        "content": "Brit milah is the covenant of circumcision, given to Abraham and kept on the eighth day of a boy’s life. A mohel performs it. For many families this is also the moment the child receives his Hebrew name.",
+        "info": "The day of birth counts as day one, so the brit falls on the eighth day even when that day is Shabbat or Yom Kippur, if the baby is well. Illness, including jaundice that a mohel judges unsafe, delays it. The sandek holds the baby. A chair is set for Elijah, called the angel of the covenant. The meal afterward is a seudat mitzvah.",
+        "customs": "The kvatter and kvatterin bring the baby in. Blessings are said, the father answers for the commandment, and the name is announced. Guests wash and sit for the meal. The night before is called vacht nacht in some communities, a night of study and watching."
+      },
+      "simchat-bat": {
+        "content": "Simchat Bat, also called Zeved Habat, welcomes a daughter. Unlike brit milah it has no single required text and no fixed day in the Torah. Families choose a home gathering or a Shabbat soon after the birth, when the mother can be present.",
+        "info": "Naming often happens in the synagogue: a parent has an aliyah, and a mi sheberach names the mother and the daughter. Sephardi communities keep older home rites, including Zeved Habat and, in some families, Las Fadas. Ashkenazi celebration grew into a public simcha in recent generations. There is no sign on the body. The welcome is a name, verses, and a meal.",
+        "customs": "Candles, verses, and an explanation of the name are the heart of the gathering. Some Sephardi rites include a gentle washing of the feet. Some communities wrap the baby in a tallit. Grandparents tell why the name was chosen, and the guests bless the parents."
+      },
+      "pidyon-haben": {
+        "content": "Pidyon haben redeems a firstborn son. The firstborn were dedicated in Temple times, and the redemption remains: five silver coins given to a kohen. The ceremony is held on the thirty-first day after birth, with a meal.",
+        "info": "It applies when the child is the mother’s firstborn, born vaginally, and neither parent is a kohen or a levi. A cesarean birth, or an earlier pregnancy that the law counts, can change the obligation, so families ask before they set the date. If day 31 falls on Shabbat or a festival, the ceremony moves, because money changes hands.",
+        "customs": "A kohen asks whether the father would rather give his son or redeem him. The father says the blessing of redemption and shehecheyanu, and gives five silver coins. The baby is often brought in on a tray, a later decorative custom. A seudah follows."
+      },
+      "upsherin": {
+        "content": "Upsherin, or chalakah, is a first haircut around age three. It is a custom, strongest among Hasidic and many Sephardi families, not a commandment. The cut marks the step from babyhood into the first years of kippah, tzitzit, and learning.",
+        "info": "Age three is linked with the orlah years of a fruit tree: the first three years are set aside, and the child, too, is said to enter learning. Many families wait for Lag BaOmer and go to Meron, to the tomb of Rabbi Shimon bar Yochai. Side locks are left in communities that keep peyot. The script is usually for boys. A girl’s first haircut, where families mark it, is quieter.",
+        "customs": "Relatives each cut a lock. Hair may be weighed and the value given as tzedakah. Honey on the alef-bet lets the child taste the letters. A kippah and tzitzit are given, with candy and a small gathering, at home or at Meron."
+      },
+      "bar-mitzvah": {
+        "content": "At thirteen a boy becomes bar mitzvah, a son of the commandments, obligated for himself. The change arrives on the Hebrew birthday whether or not anyone throws a party. The aliyah and the meal are how the community marks a status the calendar has already given.",
+        "info": "The date follows the Hebrew birthday, not the civil one. Many boys start tefillin weeks or months earlier so the day is not the first time. An aliyah on Monday, Thursday, or Shabbat is the classic public sign, often with a short teaching. The obligations of fasting and prayer follow the birthday itself.",
+        "customs": "Parents may say the blessing that releases them from responsibility for his vows. Gifts of tefillin, books, and, in communities where an unmarried young man wears one, a tallit are common. The celebration can be a kiddush or a large meal. The obligation does not depend on its size."
+      },
+      "bat-mitzvah": {
+        "content": "A girl becomes bat mitzvah at twelve, a year earlier than a boy. That is the age the halakha uses for her obligation. How the day looks depends on the community: a taught speech and a meal, a women’s gathering, or an aliyah where the synagogue calls women to the Torah.",
+        "info": "The age is twelve years and a day by the Hebrew birthday. She becomes responsible for the mitzvot that apply to her even if the family celebrates later. In many Orthodox settings the occasion is a dvar Torah and a seudah rather than an aliyah. In Conservative, Reform, and other synagogues the synagogue rite often matches a bar mitzvah.",
+        "customs": "She may teach the week’s portion, give tzedakah, or take on a mitzvah project. Candles and a festive meal are common at home. Where the synagogue marks the day, there may be an aliyah, a haftarah, or a part of the service. The point is obligation and joy, in the practice of her community."
+      },
+      "wedding": {
+        "content": "A Jewish wedding joins kiddushin, betrothal by ring and declaration, with nisuin, the marriage under the chuppah. Two steps that once could be months apart are done together. The ketubah records the groom’s obligations, and the broken glass remembers Jerusalem in the middle of the joy.",
+        "info": "The ring should be a plain band of known value, given before valid witnesses with the words of kiddushin. The chuppah is the new home. Seven blessings are said there over wine, and again at meals through the week when a minyan and a new guest are present. Many Ashkenazim fast until the ceremony. Questions about a prior marriage, a kohen, or close relatives belong with a rabbi before the date is set.",
+        "customs": "The Shabbat before may include an aufruf and a shower of candy. Ashkenazi weddings veil the bride in the bedeken, sign the ketubah, and often have the bride circle the groom. After the glass, the couple sits in yichud. The week of sheva brachot is a run of festive meals, and gladdening the couple is treated as a mitzvah."
+      }
+    },
+    "samples": {
+      "shofar": {
+        "title": "Galilee ram’s horn",
+        "description": "A polished shofar for Elul mornings and the blasts of Rosh Hashanah."
+      },
+      "sukkahLights": {
+        "title": "Sukkah lantern set",
+        "description": "Warm string lights and clips sized for a family sukkah."
+      },
+      "honeySet": {
+        "title": "Honey dish and apple plate",
+        "description": "A small dish for honey and a plate for apple slices at the Rosh Hashanah table."
+      },
+      "kittel": {
+        "title": "White Yom Kippur kittel",
+        "description": "A plain white robe for the fast, cut for standing through the prayers."
+      },
+      "swaddle": {
+        "title": "Hamsa cotton swaddle",
+        "description": "A soft wrap embroidered with a small hamsa, for the first weeks at home."
+      },
+      "namingPrint": {
+        "title": "Naming blessing print",
+        "description": "A ready card for the Hebrew name, to read at a Simchat Bat or beside the crib."
+      },
+      "babyKiddush": {
+        "title": "Baby kiddush cup",
+        "description": "A small silver-plated cup for the blessings at a brit milah."
+      },
+      "photoAlbum": {
+        "title": "First-year album",
+        "description": "A cloth album with room for the birth, the naming, and the first holidays."
+      },
+      "ketubah": {
+        "title": "Jerusalem ketubah print",
+        "description": "An illustrated ketubah text with a skyline of Jerusalem, for signing before the chuppah."
+      },
+      "menorah": {
+        "title": "Brass hanukkiah",
+        "description": "An eight-branch brass lamp with a shamash, for the window in Kislev."
+      },
+      "haggadah": {
+        "title": "Illustrated family Haggadah",
+        "description": "A Haggadah with the seder steps marked, for reading aloud in Nisan."
+      },
+      "candlesticks": {
+        "title": "Shabbat candlesticks",
+        "description": "A pair of low candlesticks for Friday night, useful in any month."
+      }
+    }
   },
   "Zmanim": {
     "title": "Daily zmanim",
