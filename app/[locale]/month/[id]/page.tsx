@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
-import { TopicPlaceholder } from "@/components/topic-placeholder";
+import { TopicPage } from "@/components/topic-page";
 import { MONTH_IDS, isMonthId } from "@/lib/cycle";
 
 export const dynamicParams = false;
@@ -19,8 +19,13 @@ export async function generateMetadata({
   if (!isMonthId(id)) {
     return {};
   }
-  const t = await getTranslations("Globe");
-  return { title: t(`months.${id}`) };
+  const globe = await getTranslations("Globe");
+  const topic = await getTranslations("Topic");
+  const name = globe(`months.${id}`);
+  return {
+    title: name,
+    description: topic(`months.${id}.content`).split("\n").join(" "),
+  };
 }
 
 export default async function MonthPage({
@@ -32,5 +37,5 @@ export default async function MonthPage({
   if (!isMonthId(id)) {
     notFound();
   }
-  return <TopicPlaceholder kind="month" id={id} />;
+  return <TopicPage kind="month" id={id} />;
 }

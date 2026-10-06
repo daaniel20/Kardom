@@ -163,3 +163,24 @@ body {
     transition: none;
   }
 }
+
+.topic-carousel {
+  scrollbar-color: #9fd0f2 transparent;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+
+.topic-carousel::-webkit-scrollbar {
+  height: 10px;
+}
+
+.topic-carousel::-webkit-scrollbar-thumb {
+  background: #9fd0f2;
+  border-radius: 999px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .topic-carousel {
+    scroll-behavior: auto;
+  }
+}

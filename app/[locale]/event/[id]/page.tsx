@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
-import { TopicPlaceholder } from "@/components/topic-placeholder";
+import { TopicPage } from "@/components/topic-page";
 import { EVENT_IDS, isEventId } from "@/lib/cycle";
 
 export const dynamicParams = false;
@@ -19,8 +19,13 @@ export async function generateMetadata({
   if (!isEventId(id)) {
     return {};
   }
-  const t = await getTranslations("Globe");
-  return { title: t(`events.${id}`) };
+  const globe = await getTranslations("Globe");
+  const topic = await getTranslations("Topic");
+  const name = globe(`events.${id}`);
+  return {
+    title: name,
+    description: topic(`events.${id}.content`).split("\n").join(" "),
+  };
 }
 
 export default async function EventPage({
@@ -32,5 +37,5 @@ export default async function EventPage({
   if (!isEventId(id)) {
     notFound();
   }
-  return <TopicPlaceholder kind="event" id={id} />;
+  return <TopicPage kind="event" id={id} />;
 }
